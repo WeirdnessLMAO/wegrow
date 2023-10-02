@@ -1,0 +1,34 @@
+<html>
+<head>
+    <title>WeGrow</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='css/home-style.css')}}">
+</head>
+<body>
+    <h1> Provide your insights to get valuable outcomes</h1>
+    <form method="POST" action='/mlmodel'>
+        <label for="param1">Nitrogen</label>
+        <input type="text" name="param1"><br>
+        <label for="param2">Phosphorus</label>
+        <input type="text" name="param2"><br>
+        <label for="param3">Potassium</label>
+        <input type="text" name="param3"><br>
+        <label for="param4">Temperature</label>
+        <input type="text" name="param4"><br>
+        <label for="param5">Humidity</label>
+        <input type="text" name="param5"><br>
+        <label for="param6">pH value</label>
+        <input type="text" name="param6"><br>
+        <label for="param7">Rainfall</label>
+        <input type="text" name="param7"><br>
+        <input type="submit" value="Submit">
+    </form>
+
+    {% if result %}
+    <div class="result-section">
+        <h2 style="color: #ffffff;">Result</h2>
+        <p style="color: #ffffff;font-size: 30px;font-family: 'Times New Roman', Times, serif   ;">The entered parameters are : {{ input_values }}</p>
+        <p style="color: #f4f4f4;font-size: 40px;font-family: 'Times New Roman', Times, serif;">The crop that can be grown : {{ result }}</p>
+    </div>
+    {% endif %}
+</body>
+</html> 

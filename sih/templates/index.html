@@ -1,0 +1,97 @@
+
+<html>
+<head>
+    <title>WeGrow</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            text-align: center;
+            font-weight: bold;
+            background-color: #8a8585;
+            background-image: url('https://i.imgur.com/veS82Pf.jpg');
+
+        }
+        h1 {
+            color: #0a0808;
+        }
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 50px;
+            box-shadow: 10px 10px 10px #434242;
+            border: 1px solid #ccc;
+            background-color: #f5f5f5;
+            font-weight: bold;
+            border-radius: 10px;
+        }
+        label {
+            display: block;
+            font-size: larger;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            box-shadow: 3px 3px 3px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        input[type="submit"] {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 15px 25px;
+            border-radius: 10px;
+            box-shadow: 5px 5px 5px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+        h2 {
+            color: #333;
+            margin-top: 20px;
+        }
+        p {
+            font-size: 18px;
+        }
+        /* Styles for the result section background-color: #b4e4f7;*/
+        .result-section {
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1> Provide your insights to get valuable outcomes</h1>
+    <form method="POST">
+        <label for="param1">Nitrogen</label>
+        <input type="text" name="param1"><br>
+        <label for="param2">Phosphorus</label>
+        <input type="text" name="param2"><br>
+        <label for="param3">Potassium</label>
+        <input type="text" name="param3"><br>
+        <label for="param4">Temperature</label>
+        <input type="text" name="param4"><br>
+        <label for="param5">Humidity</label>
+        <input type="text" name="param5"><br>
+        <label for="param6">pH value</label>
+        <input type="text" name="param6"><br>
+        <label for="param7">Rainfall</label>
+        <input type="text" name="param7"><br>
+        <input type="submit" value="Submit">
+    </form>
+
+    
+    <div class="result-section">
+        <h2 style="color: #ffffff;">Result</h2>
+        <p style="color: #ffffff;font-size: 30px;font-family: 'Times New Roman', Times, serif   ;">The entered parameters are : (51.0, 26.0, 14.0, 26.0, 56.0, 7.0, 123.0)</p>
+        <p style="color: #f4f4f4;font-size: 40px;font-family: 'Times New Roman', Times, serif;">The crop that can be grown : [&#39;orange&#39;]</p>
+    </div>
+    
+</body>
+</html> 

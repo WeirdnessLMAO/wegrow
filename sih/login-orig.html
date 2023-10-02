@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div class="box">
+            <span class="boderline"></span>
+            <form>
+                <h2>Sign In</h2>
+                <div class="inputBox">
+                    <input type="text" required="required" id="username">
+                    <span>Username</span>
+                    <i></i>
+                </div>
+                <div class="inputBox">
+                    <input type="password" required="required" id="password">
+                    <span>Password</span>
+                    <i></i>
+                </div>
+                <input type="button" value="Login" onclick="auth()">
+            </form>
+        </div>
+        <script>
+            function auth() {
+                var username = document.getElementById("username").value;
+                var password = document.getElementById("password").value;
+                if (username === "test" && password === "test") {
+                    alert("Success");
+                    window.location.assign("home.html");
+                } else {
+                    alert("Invalid Credentials");
+                    return;
+                }
+            }
+        </script>
+    </body>
+</html>
